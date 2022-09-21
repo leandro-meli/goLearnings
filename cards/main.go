@@ -7,16 +7,16 @@ import (
 )
 
 func main()  {
-	card := newCard()
-	fmt.Println(card)
-	fmt.Println(getTitle())
+	cards := []string{newCard(), "Ace of Diamonds"}
+	cards = append(cards, "Six of Spades")
+
+	for i, card := range cards {
+		fmt.Println(i + 1, card)
+	}
+	fmt.Println(cards)
 	teste.TestePacote()
 }
 
 func newCard() string {
 	return "Five of Diamonds";
-}
-
-func getTitle() string {
-	return "Harry potter"
 }
