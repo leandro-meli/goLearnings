@@ -3,7 +3,9 @@ package main
 func main()  {
 	cards := newDeck()
 
-	cards.print()
-	// fmt.Println(cards)
+	hand, remaniningCards := deal(cards, 5)
+	hand.print()
+	remaniningCards.print()
 	// teste.TestePacote()
+	// fmt.Println(cards)
 }
