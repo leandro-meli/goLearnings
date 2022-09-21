@@ -2,6 +2,6 @@ package teste
 
 import "fmt"
 
-func testePacote() {
-	fmt.Println("pacote test")
+func TestePacote() {
+	fmt.Println("teste bem sucedido")
 }
