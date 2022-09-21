@@ -7,12 +7,10 @@ import (
 )
 
 func main()  {
-	cards := []string{newCard(), "Ace of Diamonds"}
+	cards := deck{newCard(), "Ace of Diamonds"}
 	cards = append(cards, "Six of Spades")
 
-	for i, card := range cards {
-		fmt.Println(i + 1, card)
-	}
+	cards.print()
 	fmt.Println(cards)
 	teste.TestePacote()
 }
