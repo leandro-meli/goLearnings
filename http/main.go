@@ -18,10 +18,8 @@ func main() {
 
 	lw := logWriter{}
 	io.Copy(lw, resp.Body)
-	// bs := make([]byte, 99999) // A função read vai ler até preencher todo byteslice, por isso inicializar com muito espaço
+	
 	fmt.Println(resp.StatusCode)
-	// resp.Body.Read(bs)
-	// fmt.Println(string(bs))
 }
 
 func (logWriter) Write(bs []byte) (int, error) { // receiver, parameters, return
