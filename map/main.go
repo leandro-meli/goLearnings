@@ -12,6 +12,13 @@ func main() {
 
 	// delete(colors, "white") // delete
 	printMap(colors)
+	animals := map[string]string{
+		"dog": "bark",
+		"cat": "purr",
+	}
+	for _, val := range animals {
+		fmt.Println(val)
+	}
 }
 
 func printMap(c map[string]string) {
